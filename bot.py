@@ -252,7 +252,7 @@ def mostaql_login():
         # Get CSRF token
         r = mostaql_session.get("https://mostaql.com/login", headers=HEADERS, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
-        token_el = soup.select_one('input[name="_token"]')
+        token_el = soup.select_one('input[name="Norhan_amr"]')
         if not token_el:
             logger.warning("[mostaql DM] Could not find CSRF token")
             return False
