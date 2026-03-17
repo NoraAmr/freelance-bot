@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+seen_jobs.json
+seen_dms.json
+.env
+run_bot.bat
+run_bot_hidden.vbs
